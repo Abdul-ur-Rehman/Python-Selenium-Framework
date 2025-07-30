@@ -20,6 +20,6 @@ print(message)
 
 assert "Success" in message
 
-
+time.sleep(2)
 #For XPath --> //tagname[@attribute = 'value] --> //input[@type = 'submit']
 #For CSS --> tagname[attribute = 'value] --> //input[@type = 'submit'] , #id, .classname
