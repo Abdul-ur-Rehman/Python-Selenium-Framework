@@ -13,11 +13,13 @@ driver.find_element(By.ID, "exampleInputPassword1").send_keys("JONDOE123")
 driver.find_element(By.ID, "exampleCheck1").click()
 driver.find_element(By.ID, "exampleFormControlSelect1").send_keys("Male")
 driver.find_element(By.ID, "inlineRadio2").click()
-driver.find_element(By.NAME, "bday").send_keys("09-10-1998")
+driver.find_element(By.CSS_SELECTOR, "input[type='date']").send_keys("09-10-1998")
 driver.find_element(By.XPATH, "//input[@type='submit']").click()
 message = driver.find_element(By.CLASS_NAME, "alert-success").text
 print(message)
 
+assert "Success" in message
+
 
 #For XPath --> //tagname[@attribute = 'value] --> //input[@type = 'submit']
-#For CSS --> tagname[attribute = 'value] --> //input[@type = 'submit']
+#For CSS --> tagname[attribute = 'value] --> //input[@type = 'submit'] , #id, .classname
