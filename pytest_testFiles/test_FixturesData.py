@@ -1,6 +1,6 @@
 import pytest
 
-from utilities.BaseClass import BaseClass
+from pytest_testFiles.BaseClass import BaseClass
 
 
 @pytest.mark.usefixtures("dataLoad")
