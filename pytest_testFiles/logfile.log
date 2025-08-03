@@ -1,0 +1,13 @@
+2025-08-03 14:47:09,107: INFO: pytestDemo.BaseClass: Abdur
+2025-08-03 14:47:09,107: INFO: pytestDemo.BaseClass: Rehman
+2025-08-03 14:47:09,107: INFO: pytestDemo.BaseClass: testdemo@gmail.com
+2025-08-03 14:51:19,133: INFO: test_editProfile: Abdur
+2025-08-03 14:51:19,134: INFO: test_editProfile: Rehman
+2025-08-03 14:51:19,134: INFO: test_editProfile: testdemo@gmail.com
+2025-08-03 14:52:56,987: INFO: test_editProfile: Abdur
+2025-08-03 14:52:56,987: INFO: test_editProfile: Rehman
+2025-08-03 14:52:56,987: INFO: test_editProfile: testdemo@gmail.com
+2025-08-03 14:52:56,994: INFO: pytestDemo.test_logging: Information statement
+2025-08-03 14:52:56,994: WARNING: pytestDemo.test_logging: Warning mode
+2025-08-03 14:52:56,994: ERROR: pytestDemo.test_logging: fatal error
+2025-08-03 14:52:56,998: CRITICAL: pytestDemo.test_logging: Critical issue
