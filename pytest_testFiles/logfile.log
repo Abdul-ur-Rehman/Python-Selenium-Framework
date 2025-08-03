@@ -11,3 +11,6 @@
 2025-08-03 14:52:56,994: WARNING: pytestDemo.test_logging: Warning mode
 2025-08-03 14:52:56,994: ERROR: pytestDemo.test_logging: fatal error
 2025-08-03 14:52:56,998: CRITICAL: pytestDemo.test_logging: Critical issue
+2025-08-03 15:32:34,406: INFO: test_editProfile: Abdur
+2025-08-03 15:32:34,406: INFO: test_editProfile: Rehman
+2025-08-03 15:32:34,407: INFO: test_editProfile: testdemo@gmail.com
