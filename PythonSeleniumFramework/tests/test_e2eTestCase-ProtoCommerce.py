@@ -1,7 +1,7 @@
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
+
 
 from PythonSeleniumFramework.pageObjects.CheckoutPage import CheckoutPage
 from PythonSeleniumFramework.pageObjects.HomePage import HomePage
@@ -26,8 +26,7 @@ class TestOne(BaseClass):
         checkoutPage2 = checkoutPage1.checkoutButton_COP() #Click checkout button on checkout page 1
         checkoutPage2.locationTextbox().send_keys("pa") #Enter pa in the location text box on checkout page 2
 
-        wait = WebDriverWait(self.driver, 10)
-        wait.until(EC.presence_of_element_located((By.XPATH, "//a[text()='Pakistan']")))
+        self.verifyLinkPresence("Pakistan")
 
         action = ActionChains(self.driver)
         action.move_to_element(checkoutPage2.countrySelection()).click().perform() #Country selection from the dropdown list on checkout page 2
