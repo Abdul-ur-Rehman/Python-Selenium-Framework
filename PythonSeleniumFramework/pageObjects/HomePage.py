@@ -1,5 +1,7 @@
 from selenium.webdriver.common.by import By
 
+from PythonSeleniumFramework.pageObjects.ProductsPage import ProductsPage
+
 
 class HomePage:
 
@@ -12,4 +14,6 @@ class HomePage:
 
     def shopItems(self):
 
-        return self.driver.find_element(*HomePage.shop)
+        self.driver.find_element(*HomePage.shop).click()
+        productsPage = ProductsPage(self.driver)
+        return productsPage

@@ -18,7 +18,9 @@ class CheckoutPage:
 
 
     def checkoutButton_COP(self):
-        return self.driver.find_element(*CheckoutPage.checkooutButton_COP_loc)
+        self.driver.find_element(*CheckoutPage.checkooutButton_COP_loc).click()
+        checkoutPage2 = CheckoutPage(self.driver)
+        return checkoutPage2
 
     def locationTextbox(self):
         return self.driver.find_element(*CheckoutPage.location_textbox_loc)

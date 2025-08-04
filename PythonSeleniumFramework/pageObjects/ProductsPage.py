@@ -1,5 +1,8 @@
 from selenium.webdriver.common.by import By
 
+from PythonSeleniumFramework.pageObjects.CheckoutPage import CheckoutPage
+
+
 class ProductsPage:
 
     products_cards_loc = (By.XPATH, "//app-card-list/app-card/div")
@@ -22,4 +25,6 @@ class ProductsPage:
         return product.find_element(*ProductsPage.product_cartButton_loc)
 
     def checkoutButton(self):
-        return self.driver.find_element(*ProductsPage.checkoutButton_loc)
+        self.driver.find_element(*ProductsPage.checkoutButton_loc).click()
+        checkoutPage = CheckoutPage(self.driver)
+        return checkoutPage
