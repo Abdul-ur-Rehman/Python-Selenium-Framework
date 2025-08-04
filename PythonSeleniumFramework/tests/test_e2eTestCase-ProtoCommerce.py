@@ -8,18 +8,25 @@ class TestOne(BaseClass):
 
     def test_e2e_ProtoCommerce(self, setup):
         self.driver.implicitly_wait(4)
+        log = self.getLogger()
         homePage = HomePage(self.driver)
 
         productsPage = homePage.shopItems() #Click shop button on home page
+        log.info("Moving to shop page from home page")
         products = productsPage.productsCadsInfo()
+        log.info("Getting the details of products cards")
+
 
         for product in products:
-            if productsPage.extractProdcutTitle(product).text == "Blackberry":
+            product_title = productsPage.extractProdcutTitle(product).text
+            log.info(product_title)
+            if product_title == "Blackberry":
                 productsPage.cartButton(product).click() #Click add to cart button of the product
 
         checkoutPage1 = productsPage.checkoutButton() #Click checkout button on products page
         checkoutPage2 = checkoutPage1.checkoutButton_COP() #Click checkout button on checkout page 1
         checkoutPage2.locationTextbox().send_keys("pa") #Enter pa in the location text box on checkout page 2
+        log.info("Sending country text as pa")
 
         self.verifyLinkPresence("Pakistan")
 
@@ -28,7 +35,9 @@ class TestOne(BaseClass):
 
         checkoutPage2.checkboxMarker().click()  #Click on checkbox marker on checkout page 2
         checkoutPage2.purchaseButton().click() #Click on purchase button on checkout page 2
+        success_message = checkoutPage2.successMessage().text
+        log.info("Message coming from application is " + success_message)
 
-        assert "Success! Thank you!" in self.driver.find_element(By.CSS_SELECTOR, ".alert-success").text
-        print(checkoutPage2.successMessage().text)
+        assert "Success! Thank you!" in success_message
+
 
