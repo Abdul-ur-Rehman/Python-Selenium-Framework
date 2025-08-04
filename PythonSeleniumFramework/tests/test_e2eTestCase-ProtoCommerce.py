@@ -1,11 +1,6 @@
 from selenium.webdriver import ActionChains
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-
-
-from PythonSeleniumFramework.pageObjects.CheckoutPage import CheckoutPage
 from PythonSeleniumFramework.pageObjects.HomePage import HomePage
-from PythonSeleniumFramework.pageObjects.ProductsPage import ProductsPage
 from PythonSeleniumFramework.utilities.BaseClass import BaseClass
 
 
