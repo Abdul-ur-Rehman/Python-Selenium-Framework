@@ -1,0 +1,27 @@
+2025-08-04 16:26:43,801: INFO: test_formFilling: Entering firstname
+2025-08-04 16:26:43,938: INFO: test_formFilling: Entering email
+2025-08-04 16:26:44,028: INFO: test_formFilling: Entering password
+2025-08-04 16:26:44,090: INFO: test_formFilling: Clicking checkbox
+2025-08-04 16:26:44,170: INFO: test_formFilling: Selecting gender as Male
+2025-08-04 16:26:44,226: INFO: test_formFilling: Clicking radio button
+2025-08-04 16:26:44,289: INFO: test_formFilling: Selecing date
+2025-08-04 16:26:44,355: INFO: test_formFilling: Clicking submit button
+2025-08-04 16:26:44,531: INFO: test_formFilling: Refreshing Page
+2025-08-04 16:26:44,655: INFO: test_formFilling: Entering firstname
+2025-08-04 16:26:44,775: INFO: test_formFilling: Entering email
+2025-08-04 16:26:44,893: INFO: test_formFilling: Entering password
+2025-08-04 16:26:44,953: INFO: test_formFilling: Clicking checkbox
+2025-08-04 16:26:45,009: INFO: test_formFilling: Selecting gender as Male
+2025-08-04 16:26:45,057: INFO: test_formFilling: Clicking radio button
+2025-08-04 16:26:45,120: INFO: test_formFilling: Selecing date
+2025-08-04 16:26:45,165: INFO: test_formFilling: Clicking submit button
+2025-08-04 16:26:45,320: INFO: test_formFilling: Refreshing Page
+2025-08-04 16:26:50,158: INFO: test_e2e_ProtoCommerce: Moving to shop page from home page
+2025-08-04 16:26:50,177: INFO: test_e2e_ProtoCommerce: Getting the details of products cards
+2025-08-04 16:26:50,203: INFO: test_e2e_ProtoCommerce: iphone X
+2025-08-04 16:26:50,220: INFO: test_e2e_ProtoCommerce: Samsung Note 8
+2025-08-04 16:26:50,233: INFO: test_e2e_ProtoCommerce: Nokia Edge
+2025-08-04 16:26:50,247: INFO: test_e2e_ProtoCommerce: Blackberry
+2025-08-04 16:26:50,490: INFO: test_e2e_ProtoCommerce: Sending country text as pa
+2025-08-04 16:26:55,990: INFO: test_e2e_ProtoCommerce: Message coming from application is ×
+Success! Thank you! Your order will be delivered in next few weeks :-).
