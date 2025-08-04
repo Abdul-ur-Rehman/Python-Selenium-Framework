@@ -9,7 +9,6 @@ def pytest_addoption(parser):
     )
 
 @pytest.fixture(scope="class")
-
 def setup(request):
     browser_name = request.config.getoption("--bn")
 
