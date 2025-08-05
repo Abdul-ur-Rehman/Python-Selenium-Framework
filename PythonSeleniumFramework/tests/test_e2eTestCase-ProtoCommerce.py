@@ -1,10 +1,11 @@
 from selenium.webdriver import ActionChains
-from selenium.webdriver.common.by import By
+
 from PythonSeleniumFramework.pageObjects.HomePage import HomePage
 from PythonSeleniumFramework.utilities.BaseClass import BaseClass
 
 
 class TestOne(BaseClass):
+
 
     def test_e2e_ProtoCommerce(self, setup):
         self.driver.implicitly_wait(4)

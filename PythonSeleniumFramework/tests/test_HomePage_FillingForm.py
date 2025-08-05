@@ -1,6 +1,6 @@
 import pytest
 from PythonSeleniumFramework.pageObjects.HomePage import HomePage
-from PythonSeleniumFramework.testData.HomePageTestData import HomePageTestData, HomePageTestData
+from PythonSeleniumFramework.testData.HomePageTestData import HomePageTestData
 from PythonSeleniumFramework.utilities.BaseClass import BaseClass
 
 
