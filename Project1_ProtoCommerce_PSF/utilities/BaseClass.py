@@ -15,7 +15,7 @@ class BaseClass:
         loggerName = inspect.stack()[1][3]
         logger = logging.getLogger(loggerName)
         if not logger.handlers:
-            filehandler = logging.FileHandler(r"D:\QA Automation\Selenium-Python\PythonSeleniumFramework\utilities\logfile.log")
+            filehandler = logging.FileHandler(r"D:\QA Automation\Selenium-Python\Project1_ProtoCommerce_PSF\utilities\logfile.log")
             formatting = logging.Formatter("%(asctime)s: %(levelname)s: %(name)s: %(message)s")
             filehandler.setFormatter(formatting)
             logger.addHandler(filehandler)  # filehandler object

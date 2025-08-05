@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-from PythonSeleniumFramework.pageObjects.ProductsPage import ProductsPage
+from Project1_ProtoCommerce_PSF.pageObjects.ProductsPage import ProductsPage
 
 
 class HomePage:

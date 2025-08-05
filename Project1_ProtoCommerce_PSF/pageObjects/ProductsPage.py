@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-from PythonSeleniumFramework.pageObjects.CheckoutPage import CheckoutPage
+from Project1_ProtoCommerce_PSF.pageObjects.CheckoutPage import CheckoutPage
 
 
 class ProductsPage:

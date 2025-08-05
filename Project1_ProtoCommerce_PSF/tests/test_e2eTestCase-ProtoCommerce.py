@@ -1,7 +1,7 @@
 from selenium.webdriver import ActionChains
 
-from PythonSeleniumFramework.pageObjects.HomePage import HomePage
-from PythonSeleniumFramework.utilities.BaseClass import BaseClass
+from Project1_ProtoCommerce_PSF.pageObjects.HomePage import HomePage
+from Project1_ProtoCommerce_PSF.utilities.BaseClass import BaseClass
 
 
 class TestOne(BaseClass):
