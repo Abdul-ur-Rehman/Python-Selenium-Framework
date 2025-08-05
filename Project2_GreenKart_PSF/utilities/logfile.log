@@ -1,0 +1,12 @@
+2025-08-05 16:57:30,526: INFO: test_e2e_GreenKart: Enter 'ca' in the search bar
+2025-08-05 16:57:30,585: INFO: test_e2e_GreenKart: Extracting products title
+2025-08-05 16:57:31,159: INFO: test_e2e_GreenKart: Cauliflower - 1 Kg
+2025-08-05 16:57:31,667: INFO: test_e2e_GreenKart: Carrot - 1 Kg
+2025-08-05 16:57:32,165: INFO: test_e2e_GreenKart: Capsicum
+2025-08-05 16:57:32,632: INFO: test_e2e_GreenKart: Cashews - 1 Kg
+2025-08-05 16:57:32,968: INFO: test_e2e_GreenKart: Products added to cart
+2025-08-05 16:57:33,282: INFO: test_e2e_GreenKart: Moved to discount page
+2025-08-05 16:57:34,955: INFO: test_e2e_GreenKart: Discount code applied
+2025-08-05 16:57:40,042: INFO: test_e2e_GreenKart: Discount code verified
+2025-08-05 16:57:40,352: INFO: test_e2e_GreenKart: Moved to checkout page
+2025-08-05 16:57:40,820: INFO: test_e2e_GreenKart: Order placed!
