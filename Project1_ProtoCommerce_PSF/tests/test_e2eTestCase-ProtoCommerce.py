@@ -4,7 +4,7 @@ from Project1_ProtoCommerce_PSF.pageObjects.HomePage import HomePage
 from Project1_ProtoCommerce_PSF.utilities.BaseClass import BaseClass
 
 
-class TestOne(BaseClass):
+class Test_ProtoCommerce(BaseClass):
 
 
     def test_e2e_ProtoCommerce(self, setup):
