@@ -11,7 +11,7 @@ class TestHomePageFormFilling(BaseClass):
         log = self.getLogger()
         homePage = HomePage(self.driver)
 
-        homePage.nameForm().send_keys(getData["firstname"])
+        homePage.nameForm().send_keys(getData["firstName"])
         log.info("Entering firstname")
         homePage.emailForm().send_keys(getData["email"])
         log.info("Entering email")
@@ -23,7 +23,7 @@ class TestHomePageFormFilling(BaseClass):
         log.info("Selecting gender as Male")
         homePage.radioButtonForm().click()
         log.info("Clicking radio button")
-        homePage.dateForm().send_keys(getData["date"])
+        homePage.dateForm().send_keys(getData["DOB"].strftime("%m/%d/%Y"))
         log.info("Selecing date")
         homePage.submitButtonForm().click()
         log.info("Clicking submit button")
@@ -34,7 +34,7 @@ class TestHomePageFormFilling(BaseClass):
         self.driver.refresh()
         log.info("Refreshing Page")
 
-    @pytest.fixture(params= HomePageTestData.data)
+    @pytest.fixture(params= HomePageTestData.getTestCaseData("test_HomePage_FillingForm"))
     def getData(self, request):
         return request.param
 
