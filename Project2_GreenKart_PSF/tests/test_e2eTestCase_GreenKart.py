@@ -8,7 +8,7 @@ class Test_GreenKart(BaseClass):
     extracted_list = []
     test_data = HomePageTestData()
 
-    def test_e2e_GreenKart(self, setup):
+    def test_e2e_GreenKart(self):
         self.driver.implicitly_wait(4)
         log = self.getLogger()
         homePage = HomePage(self.driver)

@@ -7,7 +7,7 @@ from Project1_ProtoCommerce_PSF.utilities.BaseClass import BaseClass
 class Test_ProtoCommerce(BaseClass):
 
 
-    def test_e2e_ProtoCommerce(self, setup):
+    def test_e2e_ProtoCommerce(self):
         self.driver.implicitly_wait(4)
         log = self.getLogger()
         homePage = HomePage(self.driver)

@@ -7,7 +7,7 @@ from Project1_ProtoCommerce_PSF.utilities.BaseClass import BaseClass
 
 class TestHomePageFormFilling(BaseClass):
 
-    def test_formFilling(self, setup, getData):
+    def test_formFilling(self, getData):
         log = self.getLogger()
         homePage = HomePage(self.driver)
 
