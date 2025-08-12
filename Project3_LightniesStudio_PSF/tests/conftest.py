@@ -2,6 +2,9 @@ import pytest
 
 from selenium import webdriver
 
+from Project3_LightniesStudio_PSF.pageObjects.HomePage import HomePage
+
+
 def pytest_addoption(parser):
     parser.addoption(
         "--bn", action="store", default="chrome"
@@ -24,6 +27,8 @@ def setup(request):
         service = webdriver.EdgeService(r"C:\Users\sg\Downloads\edgedriver_win64\msedgedriver.exe")
         driver = webdriver.Edge(service=service)
         driver.maximize_window()
+    else:
+        raise ValueError(f"Unsupported browser: {browser_name}")
 
     if url == "lightnines":
         driver.get("https://lightnines.com")
@@ -34,3 +39,4 @@ def setup(request):
     request.cls.driver = driver
     yield
     driver.quit()
+
