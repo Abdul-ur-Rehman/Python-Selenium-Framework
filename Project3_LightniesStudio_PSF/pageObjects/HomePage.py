@@ -1,13 +1,14 @@
 import time
 
+from selenium.common import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC, expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
 
+from Project3_LightniesStudio_PSF.pageObjects.UploadLogo import UploadLogoPage
 
 
-
-class HomePage():
+class HomePage:
 
     #Locators
     logo_loc = (By.CSS_SELECTOR, "img[alt='Logo']")
@@ -16,6 +17,7 @@ class HomePage():
     uploadLogoButton_loc = (By.XPATH, "//span[text()='Upload Your Logo']")
     createYourSign_loc = (By.XPATH, "//span[text()='Create Your Own Sign']")
     sliderHeader_loc = (By.XPATH, "//div[@class='text-scroll']")
+    uploadLogoButton_loc = (By.XPATH, "//span[text()='Upload Your Logo']")
 
 
 
@@ -43,4 +45,8 @@ class HomePage():
         self.driver.find_element(*self.sliderHeader_loc).click()
         time.sleep(5)
         return self.driver.find_elements(*self.sliderHeader_loc)
+
+    def click_UploadLogo_Button(self):
+        self.driver.find_element(*self.uploadLogoButton_loc).click()
+        return UploadLogoPage(self.driver)
 

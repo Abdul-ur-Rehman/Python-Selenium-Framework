@@ -1,5 +1,3 @@
-from soupsieve.util import lower
-
 from Project3_LightniesStudio_PSF.pageObjects.HomePage import HomePage
 from Project3_LightniesStudio_PSF.testData import homePage_testData
 from Project3_LightniesStudio_PSF.utilities.BaseClass import BaseClass

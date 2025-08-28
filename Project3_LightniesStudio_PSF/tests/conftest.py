@@ -35,7 +35,7 @@ def setup(request):
     elif url == "TBA":
         driver.get("TBA")
 
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(5)
     request.cls.driver = driver
     yield
     driver.quit()
