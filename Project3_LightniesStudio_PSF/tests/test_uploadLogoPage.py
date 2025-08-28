@@ -1,3 +1,5 @@
+import time
+
 from Project3_LightniesStudio_PSF.pageObjects.HomePage import HomePage
 from Project3_LightniesStudio_PSF.utilities.BaseClass import BaseClass
 
@@ -15,6 +17,16 @@ class Test_UploadLogo(BaseClass):
         self.uploadLogo.countryFlag()
         self.uploadLogo.enter_phone("090078601")
         self.uploadLogo.select_budget()
+        self.uploadLogo.select_SignTypes()
+        self.uploadLogo.uploadFile()
+        time.sleep(5)
+        self.uploadLogo.textarea("Test Data")
+        self.uploadLogo.click_submitButton()
+
+
+        message = self.uploadLogo.successMessageText()
+        print(message)
+        assert "Thanks" in message
 
 
 
